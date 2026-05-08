@@ -20,8 +20,12 @@ while True:
             no= float(input("Enter Number: "))
             result *=no
         elif op == "/":
-            no= float(input("Enter Number: "))
-            result /=no
+            if no == 0:
+                print("Error: Division by zero is not allowed.")
+                break
+            else:
+                no= float(input("Enter Number: "))
+                result /=no
         elif op == "%":
             no= float(input("Enter Number: "))
             result %=no
